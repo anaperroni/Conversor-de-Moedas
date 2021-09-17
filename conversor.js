@@ -1,25 +1,39 @@
-function Converter() {
+function ConverterDolar() {
     var valorElemento = document.getElementById("valor");
     var valor = valorElemento.value;
     var valorEmDolar = parseFloat(valor);
   
-    var valorEmReal = valorEmDolar * 5.27;
+    var valorEmReal = valorEmDolar * 5.25;
     console.log(valorEmReal);
   
     var ElementoValorConvertido = document.getElementById("valorConvertido");
-    var valorConvertido = "O Resultado em real é R$ " + valorEmReal;
+    var valorConvertido = "O Resultado em Real é R$ " + valorEmReal;
     ElementoValorConvertido.innerHTML = valorConvertido;
   }
   
- function Converter() {
-    var valorEuro = document.getElementById("valor");
-    var valor = valorEuro.value;
+ function ConverterEuro() {
+    var valorElemento = document.getElementById("valor");
+    var valor = valorElemento.value;
     var valorEmEuro = parseFloat(valor);
 
-    var valorReal = valorEmEuro * 6.20;
-    console.log(valorReal);
+    var valorEmReal = valorEmEuro * 6.20;
+    console.log(valorEmReal);
 
-    var elementoEuroConvertido = document.getElementById("valorConvertidoEUR");
-    var valorConvertidoEUR = "O resultado em Real é R$ " + valorReal;
-    elementoEuroConvertido.innerHTML= valorConvertidoEUR;
+    var ElementoEuroConvertido = document.getElementById("EuroConvertido");
+    var EuroConvertido = "O resultado em Real é R$ " + valorEmReal;
+    ElementoEuroConvertido.innerHTML = EuroConvertido;
+
   }
+
+  function ConverterBitcoin() {
+    var valorElemento = document.getElementById("valor");
+    var valor = valorElemento.value;
+    var valorEmBitcoin = parseFloat(valor);
+
+    var valorEmReal = valorEmBitcoin * 0.0000040;
+    console.log(valorEmReal);
+
+    var ElementoBitcoinConvertido = document.getElementById("valorConvertido")
+    var BitcoinConvertido = "O resultado em Real é R$ " + valorEmReal;
+    ElementoBitcoinConvertido.innerHTML = BitcoinConvertido;
+  }  
